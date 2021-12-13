@@ -79,7 +79,7 @@ async def on_ready():
 
 @tasks.loop(seconds=30)
 async def change_status():
-    await commands.bot().change_presence(activity=discord.Game(choice(status)))
+    await bot.change_presence(activity=discord.Game(choice(status)))
 
 TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
