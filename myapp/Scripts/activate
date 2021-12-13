@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\wamik\OneDrive\Desktop\MyMusic\myapp"
+VIRTUAL_ENV="E:\MusicBot\myapp"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
