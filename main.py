@@ -1,9 +1,11 @@
 import os
+import discord
 import wavelink
-from discord.ext import commands
+from discord.ext import commands, tasks
 from discord import Intents
 from essentials.player import WebPlayer
 from dotenv import load_dotenv
+from random import choice
 
 load_dotenv(".env")
 
@@ -67,6 +69,12 @@ bot.load_extension("cogs.error_handler")
 
 bot.load_extension("jishaku") # uncomment this if you want to debug
 bot.load_extension("cog_reloader") # Uncomment this if you want to hot reload extensions whenever they get editted
+
+status =['Jamming out to music', 'Eating!', 'Sleeping!']
+
+@tasks.loop(seconds=30)
+async def change_status():
+    await bot.change_presence(activity=discord.Game(choice(status)))
 
 TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
