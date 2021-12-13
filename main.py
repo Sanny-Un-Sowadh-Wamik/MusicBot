@@ -11,6 +11,7 @@ load_dotenv(".env")
 
 os.environ["JISHAKU_NO_DM_TRACEBACK"] = "true"
 
+status =['Jamming out to music', 'Eating!', 'Sleeping!']
 
 class MusicBot(commands.AutoShardedBot):
     def __init__(self, command_prefix, **options):
@@ -70,7 +71,11 @@ bot.load_extension("cogs.error_handler")
 bot.load_extension("jishaku") # uncomment this if you want to debug
 bot.load_extension("cog_reloader") # Uncomment this if you want to hot reload extensions whenever they get editted
 
-status =['Jamming out to music', 'Eating!', 'Sleeping!']
+@bot.event
+async def on_ready():
+    change_status.start()
+    print('Go Go')
+
 
 @tasks.loop(seconds=30)
 async def change_status():
