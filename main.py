@@ -74,7 +74,7 @@ status =['Jamming out to music', 'Eating!', 'Sleeping!']
 
 @tasks.loop(seconds=30)
 async def change_status():
-    await bot.change_presence(activity=discord.Game(choice(status)))
+    await commands.bot().change_presence(activity=discord.Game(choice(status)))
 
 TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
