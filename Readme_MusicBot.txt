@@ -13,29 +13,31 @@ Prerequisites
 * Python 3.8+
 * pip package manager
 * ffmpeg installed on your system
-Steps
+
+Steps:
 1. Clone the repository:
         
-git clone https://github.com/your-username/MusicBot.git
-cd MusicBot
-	   2. Install dependencies:
-pip install -r requirements.txt
-	   3. Set up environment variables (e.g., Discord bot token).
-   4. Run the bot:
-python main.py
-	Usage
+	git clone https://github.com/your-username/MusicBot.git
+	cd MusicBot
+2. Install dependencies:
+	pip install -r requirements.txt
+3. Set up environment variables (e.g., Discord bot token).
+4. Run the bot:
+	python main.py
+
+Usage
    * Use !play <song name> to play a track.
    * Use !pause, !resume, !stop for playback controls.
    * Use !queue to view the current queue.
 Deployment
 To deploy on Heroku, follow these steps:
-   1. Install the Heroku CLI.
-   2. Login and create an app:
-heroku login
-heroku create your-app-name
-	   3. Deploy your code:
-git push heroku main
-	   4. Set up environment variables and scale the bot.
+1. Install the Heroku CLI.
+2. Login and create an app:
+	heroku login
+	heroku create your-app-name
+3. Deploy your code:
+	git push heroku main
+4. Set up environment variables and scale the bot.
 Contributing
 Contributions are welcome! Please check the CONTRIBUTING.md for guidelines.
 License
