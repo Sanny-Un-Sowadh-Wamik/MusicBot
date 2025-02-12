@@ -24,11 +24,12 @@ Steps:
 4. Run the bot:
 	python main.py
 
-Usage
+Usage:
    * Use !play <song name> to play a track.
    * Use !pause, !resume, !stop for playback controls.
    * Use !queue to view the current queue.
-Deployment
+
+Deployment:
 To deploy on Heroku, follow these steps:
 1. Install the Heroku CLI.
 2. Login and create an app:
@@ -37,9 +38,12 @@ To deploy on Heroku, follow these steps:
 3. Deploy your code:
 	git push heroku main
 4. Set up environment variables and scale the bot.
-Contributing
+
+Contributing:
 Contributions are welcome! Please check the CONTRIBUTING.md for guidelines.
-License
+
+License:
 This project is licensed under the MIT License - see the LICENSE file for details.
-Contact
+
+Contact:
 For any issues or suggestions, reach out via GitHub Issues or email sannyunsowadh01@gmail.com.
