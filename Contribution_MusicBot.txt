@@ -1,26 +1,28 @@
 ﻿Contributing to MusicBot
 Thank you for considering contributing to MusicBot! We welcome all contributions that help improve this project.
-How to Contribute
+
+How to Contribute:
 1. Fork the Repository: Click the "Fork" button on GitHub and clone your fork locally.
         git clone https://github.com/your-username/MusicBot.git
 cd MusicBot
-   2. Create a Branch: Make a new branch for your feature or bug fix.
+2. Create a Branch: Make a new branch for your feature or bug fix.
         git checkout -b feature-branch
-   3. Make Your Changes: Implement your feature or fix the issue.
+3. Make Your Changes: Implement your feature or fix the issue.
 
-   4. Run Tests: Ensure that your changes do not break existing functionality.
+4. Run Tests: Ensure that your changes do not break existing functionality.
 
-   5. Commit Your Changes:
+5. Commit Your Changes:
         git add .
-git commit -m "Describe your changes"
-      6. Push to GitHub:
-git push origin feature-branch
-      7. Create a Pull Request: Open a PR against the main branch and describe your changes.
+        git commit -m "Describe your changes"
+6. Push to GitHub:
+        git push origin feature-branch
+7. Create a Pull Request: Open a PR against the main branch and describe your changes.
 
-Guidelines
+Guidelines:
          * Follow the existing code style.
          * Write meaningful commit messages.
          * Ensure your code is properly documented.
-Issues
+
+Issues:
 If you find a bug or have a feature request, please open an issue in the repository.
 Thank you for your contributions!
